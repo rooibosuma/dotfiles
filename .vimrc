@@ -95,6 +95,9 @@ nnoremap <Leader>ss :<C-u>SjisSet<CR>
 
 
 "Plugins------------------------------
+"pathogen.vim
+call pathogen#runtime_append_all_bundles()
+
 "yanktmp
 let g:yanktmp_file = '/tmp/example_tmp_file'
 
