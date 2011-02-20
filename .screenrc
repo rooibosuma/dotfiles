@@ -1,0 +1,32 @@
+escape ^Jj
+
+bind p prev
+bind n next
+bind l windowlist
+
+bind s  # reset s key
+
+defkanji utf-8
+defencoding utf-8
+encoding utf-8 utf-8
+
+autodetach on
+startup_message off
+vbell off
+defscrollback 10000
+
+hardstatus alwayslastline "%{= wk} %-w%{=bu gK}%n %t%{-}%+w %= %{=b wk}%y/%m/%d %{=b wk}%c"
+
+#only hardstatus
+#hardstatus alwayslastline "%{= wk} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wb}%y/%m/%d %{=b kb}%c"
+
+#resize mode
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize ^]  command
+bind -c resize j eval 'resize +1' 'command -c resize'
+bind -c resize k eval 'resize -1' 'command -c resize'
+
+
+#startup
+#screen -t psql    0 psql -U postgres
+#screen

@@ -1,0 +1,2 @@
+$ git clone git@github.com:rooibosuma/dotfiles.git ~/.dotfiles
+$ .dotfiles/make_ln.sh
